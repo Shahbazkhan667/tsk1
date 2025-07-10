@@ -5,7 +5,7 @@
 img{
     margin:0;
     padding: 0;
-    height: 20px
+    height: 90px
 }
 section{
     display:flex;
@@ -25,9 +25,41 @@ section{
    
    
 }
-.footer1{
- font-size: 30px;
-
+::placeholder{
+    color: white;
+}
+.name{
+    
+    height: 20px;
+    width: 285px;
+    background-color: rgb(109, 20, 20);
+    border-style:solid ;
+    border-color: white;
+    border-width: 1px;
+    
+}
+textarea{
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: white;
+}
+.email{
+     height: 20px;
+    width: 285px;
+    background-color: rgb(109, 20, 20);
+    border-style:solid ;
+    border-color: white;
+    border-width: 1px;
+    margin-top: 10px;
+}
+.organisation{
+     height: 20px;
+    width: 285px;
+    background-color: rgb(109, 20, 20);
+    border-style:solid ;
+    border-color: white;
+    border-width: 1px;
+    margin-top: 10px;
 }
 
 .checkbox{
@@ -42,6 +74,14 @@ section{
     width: 90%;
 
 }
+.text{
+    display: flex;
+    height: 6px;
+    width: 200px;
+    font-size: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
 
 
 .submission{
@@ -52,8 +92,8 @@ section{
 font-size: 60px;
 }
 
-.footer{
-    font-size: larger;
+.footer1 p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
 .name1{
     height: 50px;
@@ -78,9 +118,14 @@ font-size: 60px;
 }
 .box5{
      margin-top: 20px;
+     
 }
-.button{
-    display: flex;
+.button button{
+  
     margin-top: 50px;
-margin-left: 100px;
+margin-left: 1px;
+height: 40px;
+width: 300px;
+font-size: 20px;
+
 }
