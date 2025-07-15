@@ -60,7 +60,7 @@ img{
 .part2{ 
     display: flex;
    
-    align-items:last baseline;
+    align-items:baseline;
     gap: 10px;
 }
 .part2 img{
