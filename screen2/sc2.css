@@ -1,4 +1,7 @@
 
+
+
+
 .tag img{
  
     height: 100px;
@@ -6,7 +9,7 @@
 }
 .head{
     margin: 0;
-    padding: 0;
+    padding-left: 10px;
     background-color: brown;
       clip-path: polygon(10% 0%, 100% 0, 100% 30%, 100%  80%, 87% 100%, 100% 100%, 0% 100%, 0% 0%);
     height: 550px;
@@ -14,6 +17,7 @@
     
 
 }
+
 .text h1{
     margin-top: 10px;
    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -49,55 +53,76 @@ font-size: 13px;
     margin-top: 40px;
 }
 img{
-    
+   
     padding: 0%;
     margin: 0%;
-    height: 80px;
+    height: 0px;
     margin-top: 30px;
-    margin-left: 150px;
+    margin-left: 140px;
+
+    
 
 }
 .part2{ 
     display: flex;
-   
-    align-items:baseline;
+   align-items: baseline;
     gap: 10px;
 }
 .part2 img{
-    height: 25px;
+    height: 60px;
+
     
 }
 .imagetextb{
-    font-size: 30px;
+    margin-top: 100px;
+    font-size: 80px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .gallery{
    
-    display: flex;
-    text-align:end;
-    width: 100%;
-
+   display: flex;
+    text-align:center;
+    width: 10px;
+    margin-left: 10px;
+    padding-left: 0px;
+    
+   
 
 }
 .gallery2{
     margin-top: 1px;
+    
+
 }
 .gallery img{
-    height: 50px;
+    display: flex;
+    height: 60px;
+    margin-right: 140px;
+;
+
+   
+   
+
+  
+
+  
 }
 .imagetext{
     font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .footer{
-    margin-top: 20px;
-    height:155px;
-    width: 1000px;
-    text-align:start;
+    margin-top:40px;
+    padding-top: 30px;
+    height:400px;
+    width: 100%;
+   
+    
     background-color: brown;
-     clip-path: polygon(10% 0%, 100% 0, 100% 30%, 100% 70%, 93% 100%, 30% 100%, 0 100%, 0% 0%);
-    font-size: 30px;
+     clip-path: polygon(10% 0%, 100% 0, 100% 30%, 100% 60%, 85% 100%, 30% 100%, 0 100%, 0% 0%);
+    font-size: 50px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: azure;
     
@@ -109,5 +134,13 @@ img{
     margin-right: 200px;
 }
 .color{
+    color: brown;
+}
+
+.image1{
+    padding-right: 00px;
+    margin-right: -150px;
+}
+.brown{
     color: brown;
 }
