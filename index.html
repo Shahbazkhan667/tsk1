@@ -1,105 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task screen 1</title>
-    <link rel="stylesheet" href="tsk.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  />
+    <!-- <link rel="stylesheet" href="tsk.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 </head>
-<header> <img src="screenlogo1.png">  </header>
+
+
 <body>
-      
-    <section> 
-        
-        <div class="leftsection"><h1 class="submission" >
-            Submission 
-        </h1>
-        <div class="body1">
-            <p> All details of form submission will be kept strictly private and confidential by mailman and 
-                will not be used for any purpose other than judging Red Card 2018  Winner <div class="btn2"> <button></div>
-            </p>
-        </div>
-        <div class="footer1">
-          <p style="font-size:18px">Applications will be closed on the<br> 15 December 2017 <div class="btnl"> <button  > </button></div>
-            </p>
+  
+<header style="padding: 10px; width: 100%; ;"> <img style="height: 100px;" src="screenlogo1.png"> </header>
+
+    <section style="width: 100%; display: flex; background-color: brown;">
+
+        <div style="width: 50%; padding: 150px;" class="leftsection">
+            <div>
+                <h1 class="submission">
+                    Submission
+                </h1>
+                <div class="body1">
+                    <p> All details of form submission will be kept strictly private and confidential by mailman and
+                        will not be used for any purpose other than judging Red Card 2018 Winner
+                     <button style="margin-left:360px ;"></button>
+                    </p>
+                </div>
+                <div class="footer1">
+                    <p style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Applications will be closed on the<br> 15 December 2017
+                    <button> </button></div>
+                    </p>
+                </div>
+
+            </div>
         </div>
 
-        </div>
-        <div class="rightsection"> 
+        <div style="width: 50%; margin-left: 50px; margin-top: 40px;" class="rightsection">
             <form class="form">
-                <input type="text" placeholder="Name" class="name " >
 
-                <input type="text" placeholder="email" class="email" >
-                <input type="text" placeholder="organisation" class="organisation">
+                <div style="display: flex; flex-direction: column; padding: 1px;">
 
-
-           
-           <body> <h1 class="text"> Which Award </h1>
-            <p style="color: white;" >( please tick and provide  details all of the  awards you would be likely to nominated for) </p>
-            <div class="sameline">
-           <div class="chkbox" > <input class="newwchkbox" type="checkbox" id="checked" name="form" checked="checked">
-            <label for="checkbox  " style="color: white;"  >Best livestream </label> </div>
-            <button class="btn"></button></div>
-            <div class="textarea">
-                <label for="discription" >
-                    <textarea id="discription" name="discription" rows="4" cols="50"style=" background-color: rgb(109, 20, 20 ); color: white;"> Description & results( max 150 words)
-                    </textarea><br>
-                    <input class="newchkbox"type="checkbox" name="form" >
-                    <label for="checkbox"  style="color: white;" style=" background-color: rgb(109, 20, 20); color: white;" >best online campaign</label>
-                      <button class="btn" style="height: 12px; width: 12px;"></button><br>
+                    <input type="text" placeholder="Name" class="name  " id="form">
                     
-                </label>
-            </div><div class="box2">
-                <label for="discription" >
-                    <textarea id="discription" name="discription" rows="4" cols="50" style=" background-color: rgb(109, 20, 20); color: white;"> Description & results( max 150 words)
-                    </textarea><br>
-                    <input class="newchkbox" type="checkbox" name="form">
-                    <label for="checkbox"   style="color: white;">best tour campaign</label>
-                     <button class="btn" style="height: 12px; width: 12px;"></button><br>
+                    <input type="text" placeholder="Email" class="email" id="form">
+                    <input type="text" placeholder="Organisation" class="organisation" id="form">
+                </div>
+
+
+
+               <div class="textbtwform"> <h1 class="text " style="padding-bottom: 1px; margin: 0%;"> Which Award </h1>
+                <p style="color: white; padding-top: 1px; height: fit-content; margin: 0%; font-size: 10px;">( please tick and provide details all of the awards you would be likely nominated for) </p>
+</div>
+
+
+                    <div style="display: flex; flex-direction:column ; width: 100%;margin-top: 20px  ;">
+                        <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;" >
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox6" id="checkbo" checked="checked" style="accent-color: brown;  ;"> <label for="text">Best  Livestream </label></div>
+                            <div style="width: 10%;"><button style="width: 15px; height: 15px;" >+</button></div>
+                        </div>
+                        <div style=" width:  100%;">
+                            <textarea   name="" id=""  placeholder=  " Description & results( max 150 words)" style=" text-align:justify; width: 60% ;height: 60px;"></textarea>
+                        </div>
                     </div>
-                </label>
-                <div class="box3" >
-                <label for="description3">
-                    <textarea id="description" name="description" rows="4" cols="50" style=" background-color: rgb(109, 20, 20); color: white;">Description & results( max 150 words)</textarea><br>
-                    <input  class="newchkbox" type="checkbox" name="form">
-                    <label for="checkbox"   style="color: white;">best sponsor activation</label>
-           <button class="btn" style="height: 12px; width: 12px;"></button>
 
-                </label></div>
-                <div class="box4" >
-                 <label for="description0">
-                    <textarea id="description" name="description" rows="4" cols="50"   style=" background-color: rgb(109, 20, 20); color: white;">Description & results( max 150 words)</textarea><br>
-                    <input  class="newchkbox" type="checkbox" name="form">
-                    <label for="checkbox" style="color: white;" >best use technology </label>
-               <button class="btn" style="height: 12px; width: 12px;"></button>
+                     <div style="display: flex; flex-direction:column ; width: 100%;">
+                        <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;" >
+                            <div style="width:90% ;"><input type="checkbox" name=" checkbox1" id="checkbox"  > <label for="text" ;>Best Tour Campaign </label></div>
+                            <div style="width: 10%; ;"><button style="width:15px ; height: 15px;color: brown ;  justify-content: center;">+</button></div>
+                        </div>
+                        <div style=" width:100%;">
+                            <textarea cols="40" rows="4"  name="" id=""  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                        </div>
+                    </div>
 
-                </label></div>
-                <div class="box5">
-                 <label for="description2">
-                    <textarea id="description2" name="description" rows="4" cols="50"style=" background-color: rgb(109, 20, 20); color: white;"> Description & results( max 150 words)</textarea><br>
-                    <input class="newchkbox" type="checkbox" name="form">
-                    <label for="checkbox"   style="color: white;">best tour campaign</label>
-               <button class="btn" style="height: 12px; width: 12px;"></button>
 
-                </label></div>
-                <div class="button">
-                <button >    <i class="fa-solid fa-check fa-1x"  style="margin-right: 9px; "></i>   Submission successful</button>
-             
-            </div>
-            </div>
-           
 
-            
-           
+                     <div style="display: flex; flex-direction:column ; width: 100%; ">
+                        <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;" >
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox2 " id="checkbox" > <label for="text">Best sponser Activation</label></div>
+                            <div style="width: 10%;"><button style="width: 15px; height: 15px; ">+</button></div>
+                        </div>
+                        <div style=" width:  100%;">
+                            <textarea cols="40" rows="4"  name="checkbox5" id=""  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                        </div>
+                    </div>
 
-                  </form>
-         
-        </body>
-        </div>
-        
 
+
+                     <div style="display: flex; flex-direction:column ; width: 100%; ">
+                        <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;" >
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox3" id="checkbox"  > <label for="text">Best Use Technology </label></div>
+                            <div style="width: 10%;"><button style="width:15px ; height: 15px; ;">+</button></div>
+                        </div>
+                        <div style=" width:  100%;">
+                            <textarea cols="40" rows="4"  name="" id=""  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                        </div>
+                    </div>
+
+                     <div style="display: flex; flex-direction:column ; width: 100%; ">
+                        <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;" >
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox4" id="checkbox"> <label for="text" >Best Online Campaign</label></div>
+                            <div style="width: 10%;"><button style="width: 15px; height: 15px; ">+</button></div>
+                        </div>
+                        <div style=" width:  100%;">
+                            <textarea cols="40" rows="4"  name="" id=""  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                        </div>
+                    </div>
+               
+
+                   
+                <div style="background-color: white;width: 40%; margin: 20px 0px 30px 40px ;">
+                   
+                        <input type="button" value="submission successful"  >
+
+                </div>
+                 
+            </form>
     </section>
 
+
+   <style>
+
+ .submission{
+    color: white;
+    font-size:50px;
+    padding:0%;
+    margin: 0%;
+
+}
+.leftsection button{
+    display: flex ;
+    flex-direction: column;
+    margin-left: 350px;
+    width: 13px;
+    height: 13px;
+}
+
+#form{
+       text-align: left;
+        background-color: brown;
+        border: solid white;
+        border-width: 2px ;
+        padding: 5px;
+        width: 60%;
+        margin-bottom: 10px ;
+        
+   
+    
+    }
+    
+    ::placeholder{
+        color:white;
+    }
+    textarea{
+        border: solid white  ;
+        background-color: brown;
+        color: white;
+        width: 60%;
+    }
+
+  label{
+    color: white;
+    font-size: 11px;
+    display: inline;
+   
+  
+    
+
+   
+  }
+  #checkbox{
+    appearance: none;
+    background: color white;
+    width: 10px;
+    height: 10px;
+    border:  1px solid white;
+    border-width: 1px ;
+    
+  }
+  button{
+    display: flex;
+    color: brown;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+  }
+
+      </style>
 </body>
+
 </html>
