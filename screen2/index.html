@@ -13,7 +13,7 @@
 <body>
     
   
-<header style="padding: 10px; width: 100%; ;"> <img style="height: 100px;" src="screenlogo1.png"> </header>
+<header style="padding: 10px; width: 100%; ; margin-left: 1%;"> <img style="height: 100px;" src="screenlogo1.png"> </header>
 
     <section style="width: 100%; display: flex; background-color: #702424; margin-left: 1%;     clip-path: polygon(10% 0%, 100% 0, 100% 30%, 100% 86%, 90% 100%, 30% 100%, 0 100%, 0% 0%); " >
 
@@ -29,11 +29,10 @@
                     </p>
                 </div>
                 <div class="footer1">
-                    <p style=" margin-top: 0%; font-size:25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Applications will be closed on the<br> 15 December 2017
+                    <p style=" margin-top: 0%; font-size:25px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Applications will be closed on the<br> 15 December 2017</p>
                     <button style="padding: 0%; margin-left: 95%;"> +</button></div>
-                    </p>
+                   
                 </div>
-
             </div>
         </div>
 
@@ -51,7 +50,7 @@
 
 
                <div class="textbtwform"> <h1 class="text " style="padding-bottom: 1px; margin: 0%; font-size: 30px; font-family: 'Arial Black', Gadget, sans-serif;"> Which Award </h1>
-                <p style="  color :white;  height: fit-content; margin: 0%; display:inline;;width: 90%;">( please tick and provide details all of the awards you would be likely nominated for) </p>
+                <p style="  color :white;  height: fit-content; margin: 0%; display:inline; display: flex;width: 85%; font-size:14px;">( please tick and provide details all of the awards you would be likely nominated for) </p>
 </div>
 
 
@@ -128,12 +127,13 @@
        
         display: flex;
         flex-direction:column;
-      align-items: center;
+      align-items:start;
       
       overflow: hidden;
      padding-top: 20%;
      
-   
+   align-items: center;
+   justify-content:initial;
     
     }
 .leftsection button{
@@ -147,6 +147,14 @@ margin-left: 400px;
     margin: 0%;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+}
+@media screen and  (max-width: 1000px) {
+    .submission {
+        font-size : 60px;
+    }.inputicons .fa-check{
+        font-size: 10px;
+    }
+    
 }
 .leftsection button{
     display: flex ;
@@ -210,14 +218,7 @@ input[type=checkbox]:checked:before {
     color: white;
     font-size: 11px;
     display: inline;
-   
-  
-    
-
-   
   }
-  
-
   
   button{
     display: flex;
@@ -256,7 +257,11 @@ color: #dbcaca;
                 }
 
       </style>
+<script> 
 
+    
+    
+</script>
   
 </body>
 
