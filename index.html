@@ -37,14 +37,14 @@
         </div>
 
         <div style="width: 50%; margin-left: 1px; margin-top: 40px; padding-left: 5%;" class="rightsection">
-            <form class="form">
+            <form class="form" onsubmit="return formSubmitted()" action="index3.html">
 
                 <div style="display: flex; flex-direction: column; padding: 1px;">
 
-                    <input type="text" placeholder="Name" class="name  " id="form">
+                    <input type="text" placeholder="Name" class="form" id="name">
                     
-                    <input type="text" placeholder="Email" class="email" id="form">
-                    <input type="text" placeholder="Organisation" class="organisation" id="form">
+                    <input type="email" placeholder="Email" class="form" id="email">
+                    <input type="text" placeholder="Organisation" class="form" id="organization">
                 </div>
 
 
@@ -60,17 +60,17 @@
                             <div style="width: 10%;"><button style="width: 15px; height: 15px; " >+</button></div>
                         </div>
                         <div style=" width:  100%;">
-                            <textarea   cols="50" rows="5" name="textarea" id="field"  placeholder=  " Description & results( max 150 words)"></textarea>
+                            <textarea   cols="50" rows="5" name="textarea" id="field1"  placeholder=  " Description & results( max 150 words)"></textarea>
                         </div>
                     </div>
 
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px;">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name=" checkbox1" id="checkbox"  > <label for="text" ; style=" position: absolute; transform: translate(5%,  20%)">Best Tour Campaign </label></div>
+                            <div style="width:90% ;"><input type="checkbox" name=" checkbox1" id="checkbox1"  > <label for="text" ; style=" position: absolute; transform: translate(5%,  20%)">Best Tour Campaign </label></div>
                             <div style="width: 10%; ;"><button style="width:15px ; height: 15px;;  justify-content: center;">+</button></div>
                         </div>
                         <div style=" width:100%;">
-                            <textarea cols="50" rows="5"  name=" textarea" id="field"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                            <textarea cols="50" rows="5"  name=" textarea" id="field2"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
                         </div>
                     </div>
 
@@ -78,11 +78,11 @@
 
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px; ">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left; margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name="checkbox2 " id="checkbox" > <label for="text" style=" position: absolute; transform: translate(5%,  20%);" >Best sponser Activation</label></div>
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox2 " id="checkbox2" > <label for="text" style=" position: absolute; transform: translate(5%,  20%);" >Best sponser Activation</label></div>
                             <div style="width: 10%;"><button style=" width: 15px; height: 15px; ">+</button></div>
                         </div>
                         <div style=" width:  100%;">
-                            <textarea cols="50" rows="5"  name="textarea" id="field"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                            <textarea cols="50" rows="5"  name="textarea" id="field3"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
                         </div>
                     </div>
 
@@ -90,21 +90,21 @@
 
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px; ">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; align-items:baseline; ;margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name="checkbox3" id="checkbox"  > <label for="text" style=" position: absolute; transform: translate(5%,  20%);">Best Use Technology </label></div>
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox3" id="checkbox3"  > <label for="text" style=" position: absolute; transform: translate(5%,  20%);">Best Use Technology </label></div>
                             <div style="width: 10%;"><button style="width:15px ; height: 15px; ;">+</button></div>
                         </div>
                         <div style=" width:  100%;">
-                            <textarea cols="50" rows="5"  name="textarea" id="field"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                            <textarea cols="50" rows="5"  name="textarea" id="field4"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
                         </div>
                     </div>
 
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px; ">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name="checkbox4" id="checkbox"> <label for="text"style=" position: absolute; transform: translate(5%,  20%)">Best Online Campaign</label></div>
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox4" id="checkbox4"> <label for="text"style=" position: absolute; transform: translate(5%,  20%)">Best Online Campaign</label></div>
                             <div style="width: 10%;"><button style="width: 15px; height: 15px; ; ">+</button></div>
                         </div>
                         <div style=" width:  100%;">
-                            <textarea cols="50" rows="5"  name="textarea" id="field"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                            <textarea cols="50" rows="5"  name="textarea" id="field5"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
                         </div>
                     </div>
                
@@ -112,7 +112,7 @@
                    
                 <div class="inputicons">
                     <i class="fa-solid fa-check"></i>
-                        <input type="button" value="Submission Successful"  class="submit" >
+                        <input type="submit" value="Submission Successful"   class="submit">
 
                 </div>
        
@@ -150,7 +150,7 @@ margin-left: 400px;
 }
 @media screen and  (max-width: 1000px) {
     .submission {
-        font-size : 60px;
+        font-size : 50px;
     }.inputicons .fa-check{
         font-size: 10px;
     }
@@ -186,7 +186,7 @@ input[type=checkbox]:checked:before {
 
 	color:white!important;
 }
-#form{
+.form{
        text-align: left;
         background-color: #702424;
         border: solid white;
@@ -195,9 +195,6 @@ input[type=checkbox]:checked:before {
         width: 80%;
         margin-bottom: 3%;
        
-    
-        
-   
     
     }
     
@@ -257,7 +254,7 @@ color: #dbcaca;
                 }
 
       </style>
-<script> 
+<script src="index1.js"> 
 
     
     
