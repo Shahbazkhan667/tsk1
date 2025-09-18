@@ -41,10 +41,14 @@
 
                 <div style="display: flex; flex-direction: column; padding: 1px;">
 
-                    <input type="text" placeholder="Name" class="form" id="name">
+                  <div class="form">  <input type="text" class="form0" placeholder="Name"  id="name">
+                    <p class="same" id="name-error"> </p></div>
                     
-                    <input type="email" placeholder="Email" class="form" id="email">
-                    <input type="text" placeholder="Organisation" class="form" id="organization">
+                   <div class="form"> <input type="email" placeholder="Email" class="form0" id="email">
+                    <p class="same" id="email-error"> </p></div>
+
+                  <div class="form">  <input type="text" placeholder="Organisation" class="form0" id="organization">
+                    <p class="same" id="org-error"> </p></div>
                 </div>
 
 
@@ -59,18 +63,18 @@
                             <div style="width:90% ;"><input type="checkbox" name="checkbox6" id="checkbox" checked="checked" style=" margin-left: 0%;"> <label for="text" style=" position: absolute; transform: translate(5%,  20%)">Best  Livestream </label></div>
                             <div style="width: 10%;"><button style="width: 15px; height: 15px; " >+</button></div>
                         </div>
-                        <div style=" width:  100%;">
-                            <textarea   cols="50" rows="5" name="textarea" id="field1"  placeholder=  " Description & results( max 150 words)"></textarea>
+                        <div style=" width:  100% ; display: ">
+                            <textarea   cols="50" rows="5" name="textarea" id="field1"  placeholder=  " Description & results( max 150 words)"></textarea>   <p class="des" id="des1"> </p>               
                         </div>
                     </div>
 
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px;">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name=" checkbox1" id="checkbox1"  > <label for="text" ; style=" position: absolute; transform: translate(5%,  20%)">Best Tour Campaign </label></div>
+                            <div style="width:90% ;"><input type="checkbox" name=" checkbox1" id="checkbox1"  > <label for="text" ; style=" position: absolute; transform: translate(5%,  20%)">Best Tour Campaign  <span id="chk1"> this fieled</span> </label></div>
                             <div style="width: 10%; ;"><button style="width:15px ; height: 15px;;  justify-content: center;">+</button></div>
                         </div>
                         <div style=" width:100%;">
-                            <textarea cols="50" rows="5"  name=" textarea" id="field2"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                            <textarea cols="50" rows="5"  name=" textarea" id="field2"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>  <p class="des" id="des2"> </p>
                         </div>
                     </div>
 
@@ -78,11 +82,11 @@
 
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px; ">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left; margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name="checkbox2 " id="checkbox2" > <label for="text" style=" position: absolute; transform: translate(5%,  20%);" >Best sponser Activation</label></div>
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox2 " id="checkbox2" > <label for="text" style=" position: absolute; transform: translate(5%,  20%);" >Best sponser Activation  <span id="chk2"> this fieled</span></label></div>
                             <div style="width: 10%;"><button style=" width: 15px; height: 15px; ">+</button></div>
                         </div>
                         <div style=" width:  100%;">
-                            <textarea cols="50" rows="5"  name="textarea" id="field3"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                            <textarea cols="50" rows="5"  name="textarea" id="field3"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea> <p class="des" id="des3"> </p>
                         </div>
                     </div>
 
@@ -90,21 +94,21 @@
 
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px; ">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; align-items:baseline; ;margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name="checkbox3" id="checkbox3"  > <label for="text" style=" position: absolute; transform: translate(5%,  20%);">Best Use Technology </label></div>
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox3" id="checkbox3"  > <label for="text" style=" position: absolute; transform: translate(5%,  20%);">Best Use Technology  <span id="chk3"> this fieled</span> </label></div>
                             <div style="width: 10%;"><button style="width:15px ; height: 15px; ;">+</button></div>
                         </div>
                         <div style=" width:  100%;">
-                            <textarea cols="50" rows="5"  name="textarea" id="field4"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                            <textarea cols="50" rows="5"  name="textarea" id="field4"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>  <p class="des" id="des4"> </p>
                         </div>
                     </div>
 
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px; ">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name="checkbox4" id="checkbox4"> <label for="text"style=" position: absolute; transform: translate(5%,  20%)">Best Online Campaign</label></div>
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox4" id="checkbox4"> <label for="text"style=" position: absolute; transform: translate(5%,  20%)">Best Online Campaign <span id="chk4"> this fieled</span></label></div>
                             <div style="width: 10%;"><button style="width: 15px; height: 15px; ; ">+</button></div>
                         </div>
                         <div style=" width:  100%;">
-                            <textarea cols="50" rows="5"  name="textarea" id="field5"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>
+                            <textarea cols="50" rows="5"  name="textarea" id="field5"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>  <p class="des" id="des5"> </p>
                         </div>
                     </div>
                
@@ -122,7 +126,10 @@
 
 
    <style>
-    
+    input{
+        margin: 0%;
+        padding: 0%;
+    }
     .leftsection {
        
         display: flex;
@@ -147,6 +154,17 @@ margin-left: 400px;
     margin: 0%;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+}
+.same{
+    padding: 0% !important;
+    margin: 0% !important;
+    color:white;
+
+}
+.des{
+    margin: 0%;
+    padding: 0%;
+    color: white;
 }
 @media screen and  (max-width: 1000px) {
     .submission {
@@ -187,14 +205,17 @@ input[type=checkbox]:checked:before {
 	color:white!important;
 }
 .form{
+      margin-bottom: 3%;
+
+}
+.form0{
        text-align: left;
         background-color: #702424;
         border: solid white;
         border-width: 2px ;
         padding: 3% 0% 3% 2% ;
         width: 80%;
-        margin-bottom: 3%;
-       
+      
     
     }
     
