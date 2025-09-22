@@ -13,9 +13,9 @@
 <body>
     
   
-<header style="padding: 10px; width: 100%; ; margin-left: 1%;"> <img style="height: 100px;" src="screenlogo1.png"> </header>
+<header style="padding: 10px 0px 10px 10px; width:fit-content; ; margin-left: 1%;"> <img style="height: 100px;" src="screenlogo1.png"> </header>
 
-    <section style="width: 100%; display: flex; background-color: #702424; margin-left: 1%;     clip-path: polygon(10% 0%, 100% 0, 100% 30%, 100% 86%, 90% 100%, 30% 100%, 0 100%, 0% 0%); " >
+    <section style="width: 98%; display: flex; background-color: #702424; margin-left: 1%;     clip-path: polygon(10% 0%, 100% 0, 100% 30%, 100% 86%, 90% 100%, 30% 100%, 0 100%, 0% 0%); " >
 
         <div style="width: 50%; " class="leftsection">
             <div>
@@ -36,8 +36,8 @@
             </div>
         </div>
 
-        <div style="width: 50%; margin-left: 1px; margin-top: 40px; padding-left: 5%;" class="rightsection">
-            <form class="form" onsubmit="return formSubmitted()" action="index3.html">
+        <div style="width: 50%; margin-left: 1px;; padding-left: 5%;" class="rightsection">
+            <form class="form1" id="form" onsubmit="return formSubmitted()" action="index3.html">
 
                 <div style="display: flex; flex-direction: column; padding: 1px;">
 
@@ -70,7 +70,7 @@
 
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px;">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name=" checkbox1" id="checkbox1"  > <label for="text" ; style=" position: absolute; transform: translate(5%,  20%)">Best Tour Campaign  <span id="chk1"> this fieled</span> </label></div>
+                            <div style="width:90% ;"><input type="checkbox" name=" checkbox1" id="checkbox1"  > <label for="text" ; style=" position: absolute; transform: translate(5%,  20%)">Best Tour Campaign  <span id="chk1"> </span> </label></div>
                             <div style="width: 10%; ;"><button style="width:15px ; height: 15px;;  justify-content: center;">+</button></div>
                         </div>
                         <div style=" width:100%;">
@@ -78,11 +78,9 @@
                         </div>
                     </div>
 
-
-
-                     <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px; ">
+<div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px; ">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left; margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name="checkbox2 " id="checkbox2" > <label for="text" style=" position: absolute; transform: translate(5%,  20%);" >Best sponser Activation  <span id="chk2"> this fieled</span></label></div>
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox2 " id="checkbox2" > <label for="text" style=" position: absolute; transform: translate(5%,  20%);" >Best sponser Activation  <span id="chk2"> </span></label></div>
                             <div style="width: 10%;"><button style=" width: 15px; height: 15px; ">+</button></div>
                         </div>
                         <div style=" width:  100%;">
@@ -91,10 +89,9 @@
                     </div>
 
 
-
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px; ">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; align-items:baseline; ;margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name="checkbox3" id="checkbox3"  > <label for="text" style=" position: absolute; transform: translate(5%,  20%);">Best Use Technology  <span id="chk3"> this fieled</span> </label></div>
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox3" id="checkbox3"  > <label for="text" style=" position: absolute; transform: translate(5%,  20%);">Best Use Technology  <span id="chk3"> </span> </label></div>
                             <div style="width: 10%;"><button style="width:15px ; height: 15px; ;">+</button></div>
                         </div>
                         <div style=" width:  100%;">
@@ -104,17 +101,14 @@
 
                      <div style="display: flex; flex-direction:column ; width: 100%; margin-top: 15px; ">
                         <div style="display: flex; flex-direction:row ;  width: 50% ; text-align: left;margin-bottom: 3px" >
-                            <div style="width:90% ;"><input type="checkbox" name="checkbox4" id="checkbox4"> <label for="text"style=" position: absolute; transform: translate(5%,  20%)">Best Online Campaign <span id="chk4"> this fieled</span></label></div>
-                            <div style="width: 10%;"><button style="width: 15px; height: 15px; ; ">+</button></div>
+                            <div style="width:90% ;"><input type="checkbox" name="checkbox4" id="checkbox4"> <label for="text"style=" position: absolute; transform: translate(5%,  20%)">Best Online Campaign <span id="chk4"> </span></label></div>
+                            <div style="width: 10%;"><button style="width: 15px; height: 15px;">+</button></div>
                         </div>
                         <div style=" width:  100%;">
                             <textarea cols="50" rows="5"  name="textarea" id="field5"  placeholder=  " Description & results( max 150 words)" style=" text-align:justify;"></textarea>  <p class="des" id="des5"> </p>
                         </div>
                     </div>
-               
-
-                   
-                <div class="inputicons">
+               <div class="inputicons">
                     <i class="fa-solid fa-check"></i>
                         <input type="submit" value="Submission Successful"   class="submit">
 
@@ -126,6 +120,14 @@
 
 
    <style>
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
     input{
         margin: 0%;
         padding: 0%;
@@ -165,8 +167,9 @@ margin-left: 400px;
     margin: 0%;
     padding: 0%;
     color: white;
+
 }
-@media screen and  (max-width: 1000px) {
+@media screen and  (max-width: 100px) {
     .submission {
         font-size : 50px;
     }.inputicons .fa-check{
@@ -203,6 +206,10 @@ input[type=checkbox]:before {
 input[type=checkbox]:checked:before {
 
 	color:white!important;
+}
+.form1{
+      margin-bottom: 3%;
+padding-top:25px ;
 }
 .form{
       margin-bottom: 3%;
