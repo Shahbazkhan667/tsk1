@@ -13,7 +13,10 @@ function formSubmitted(){
 
   let a =document.getElementById("name").value;
 let b =document.getElementById("email").value;
+var pattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$/;
 let c =document.getElementById("organization").value;
+let num = document.getElementById("number").value.trim();
+let number = /^03[0-9]{2}-?[0-9]{7}$/;
 let discription1 = document.getElementById("field1").value;
 let discription2 = document.getElementById("field2").value;
 let discription3 = document.getElementById("field3").value;
@@ -24,11 +27,29 @@ let dis2 = discription2.trim().split(/\s+/).length ;
 let dis3 = discription3.trim().split(/\s+/).length ;
 let dis4 = discription4.trim().split(/\s+/).length ;
 let dis5 = discription5.trim().split(/\s+/).length ;
+let rdb1 =document.getElementById("male");
+let rdb2 =document.getElementById("female");
 
 let check1 = document.getElementById("checkbox1").checked;
 let check2 = document.getElementById("checkbox2").checked;
 let check3 = document.getElementById("checkbox3").checked;
 let check4 = document.getElementById("checkbox4").checked;
+let country = document.getElementById("t1").value.trim();
+  document.getElementById("name-error").innerText = "";
+  document.getElementById("email-error").innerText = "";
+  document.getElementById("org-error").innerText = "";
+  document.getElementById("num-error").innerText = "";
+  document.getElementById("rdb").innerText = "";
+  document.getElementById("select-option").innerText = "";
+  document.getElementById("des1").innerText = "";
+  document.getElementById("des2").innerText = "";
+  document.getElementById("des3").innerText = "";
+  document.getElementById("des4").innerText = "";
+  document.getElementById("des5").innerText = "";
+  document.getElementById("chk1").innerText = "";
+  document.getElementById("chk2").innerText = "";
+  document.getElementById("chk3").innerText = "";
+  document.getElementById("chk4").innerText = "";
 
 if(a=="" || b=="" || c==""){
  if (a == "" ){
@@ -37,8 +58,8 @@ if(a=="" || b=="" || c==""){
   return false; 
  } 
  
- else if  (b==""){
-  y="** Please fill this field is must"
+ else if  (!b.match(pattern)){
+  y="**please enter an valid email@gmail.com"
   document.getElementById("email-error").innerText = y;
   return false;
  }
@@ -58,6 +79,27 @@ else{
 
 }
 
+
+else if (!number.test(num)){
+  let x= "enter a vlid number like(0341-5011162)"
+  document.getElementById("num-error").innerHTML=x;
+  return false;
+}
+
+    else if ( rdb1.checked !== true && rdb2.checked !== true ){
+     let c= "**plz select gneder"
+     document.getElementById("rdb").innerHTML=c; 
+      return false
+
+      
+    }
+
+    else if (country === ""){
+      s ="select country";
+      document.getElementById("select-option").innerHTML=s;
+      return false;
+    }
+
 else if (dis1 < 5 || dis2 < 5 || dis3 < 5 || dis4 < 5  || dis5 < 5){
 
 
@@ -67,7 +109,7 @@ else if (dis1 < 5 || dis2 < 5 || dis3 < 5 || dis4 < 5  || dis5 < 5){
   return false;
  }
     else if (dis2 < 5){
-  y="** add awards details more than 5 words  "
+  y="** add awards details more than 5 words"
   document.getElementById("des2").innerText = y;
   return false;
  }
@@ -89,43 +131,6 @@ else if (dis1 < 5 || dis2 < 5 || dis3 < 5 || dis4 < 5  || dis5 < 5){
 
 return false;
 }
-//  if (di< 4){
-//   x="** Please fill this field is must"
-//   document.getElementById("des1").innerText = x;
- 
-   
-//   return false;
-//  }
- 
-
-//   if (di < 5){
-//   y="** Please fill this field is must"
-//   document.getElementById("des2").innerText = y;
-//   return false;
-//  }
-//  if (discription3 ==""){
-//   y="** Please fill this field is must"
-//   document.getElementById("des3").innerText = y;
-//   return false;
-//  }
-// if  (  discription4 ==""){
-//   x="** Please fill this field is must"
-//   document.getElementById("des4").innerText = x;
-//   return false;
-// }
-// if  (  discription5 ==""){
-//   x="** Please fill this field is must"
-//   document.getElementById("des5").innerText = x;
-//   return false;
-// }
-//  else{
-//   return true;
-//  }
-
-
-
-    // alert(" description must be more than 8 words")
-    // return false;
 
 
 else if(check1 == false || check2== false  || check3 == false || check4 == false){
@@ -153,10 +158,6 @@ else{
   return true
 }
 
-
-
-  // alert("checkfield is required")
-  //   return false;
 }
 else{
     return true;
