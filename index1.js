@@ -7,7 +7,9 @@
 // })
 
 
-
+let errorName = document.getElementById("name-error");
+let errorEmail = document.getElementById("email-error");
+let errorOrg = document.getElementById("org-error");
 
 function formSubmitted(){
 
@@ -53,19 +55,16 @@ let country = document.getElementById("t1").value.trim();
 
 if(a=="" || b=="" || c==""){
  if (a == "" ){
-  x="** Please fill this field is must"
-  document.getElementById("name-error").innerText = x;
+errorName.innerText ="**plz fill this field"
   return false; 
  } 
  
  else if  (!b.match(pattern)){
-  y="**please enter an valid email@gmail.com"
-  document.getElementById("email-error").innerText = y;
+  errorEmail.innerText ="**enter your email @gmail.com"
   return false;
  }
 else if  ( c==""){
-  x="** Please fill this field is must"
-  document.getElementById("org-error").innerText = x;
+   errorOrg.innerText ="**enter organisation"
   return false;
 }
  
